@@ -1,0 +1,15 @@
+{
+  "name": "discord-bot-examples",
+  "version": "1.0.0",
+  "description": "JavaScript를 사용한 디스코드 봇 제작하기 예제코드",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.23.2"
+  }
+}
