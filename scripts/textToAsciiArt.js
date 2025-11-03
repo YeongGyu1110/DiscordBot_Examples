@@ -1,4 +1,21 @@
 /*
+이 소스에는 GPL 3.0이 적용되어있습니다.
+Copyright (c) 2025 cYs1lent
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 사용법: /아트 "[문자열]" [폰트]
 - [문자열]: 변환할 내용, 큰따옴표("")로 감싸야 됨
 - [폰트]: 선택 사항, 폰트를 지정하지 않으면 기본 폰트 생성

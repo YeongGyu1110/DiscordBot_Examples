@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "@iamtraction/google-translate": "^2.0.1",
     "discord.js": "^14.23.2",
