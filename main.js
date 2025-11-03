@@ -5,4 +5,4 @@ const { token } = require('../token.js');
 
 client.login(token);
 
-client.once('clientReady', () => console.log('Github Repository: [https://github.com/YeongGyu1110/DiscordBot_Examples]\nStart!'));
+client.once('clientReady', () => console.log('Github Repository: [https://github.com/YeongGyu1110/DiscordBot_Examples]\is ready!'));

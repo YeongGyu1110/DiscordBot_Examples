@@ -36,4 +36,4 @@ client.on('messageCreate', (message) => {
     }
 });
 
-client.once('clientReady', () => console.log('Github Repository: [https://github.com/YeongGyu1110/DiscordBot_Examples]\nStart!'));
+client.once('clientReady', () => console.log('Github Repository: [https://github.com/YeongGyu1110/DiscordBot_Examples]\ncolorCodeConverter bot is ready'));
