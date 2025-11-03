@@ -28,8 +28,6 @@ const translate = require('@iamtraction/google-translate');
 
 client.login(token);
 
-client.once('clientReady', () => console.log('Translator bot is ready!'));
-
 client.on('messageCreate', async (message) => {
     if (message.author.bot) return;
 
@@ -74,3 +72,4 @@ client.on('messageCreate', async (message) => {
         message.reply(`번역 중 오류가 발생했습니다. 언어 코드('${error.message.match(/The language '(.+?)' is not supported/)?.[1] || ''}')가 유효한지 확인해주세요.`);
     }
 });
+client.once('clientReady', () => console.log('Github Repository: [https://github.com/YeongGyu1110/DiscordBot_Examples]\nTranslator bot is ready!'));
