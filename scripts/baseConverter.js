@@ -15,6 +15,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+
 사용법: /변환 "[문자열 또는 숫자]" [변환하려는 진수]
 - [문자열 또는 숫자]: 변환할 내용, 큰따옴표("")로 감싸야 됨
 - [변환하려는 진수]: 2부터 36까지의 숫자
@@ -33,7 +34,7 @@ client.login(token);
 
 client.on('messageCreate', async (message) => {
     if (message.author.bot) return;
-    
+
     const prefix = '/변환';
     if (!message.content.startsWith(prefix)) return;
 
@@ -45,14 +46,14 @@ client.on('messageCreate', async (message) => {
     const textPart = textMatch[0];
     const radixStr = message.content.slice(message.content.indexOf(textPart) + textPart.length).trim();
     const radix = parseInt(radixStr, 10);
-    
+
     if (isNaN(radix) || radix < 2 || radix > 36) {
         return message.reply('진수는 2에서 36 사이의 숫자여야 합니다.');
     }
-    
+
     let result = '';
     let inputType = '';
-    
+
     if (/^\d+$/.test(inputValue)) {
         inputType = '숫자';
         try {
@@ -63,14 +64,14 @@ client.on('messageCreate', async (message) => {
     } else {
         inputType = '문자열';
         result = inputValue
-        .split('')
-        .map(char => {
-            const codePoint = char.charCodeAt(0);
-            return codePoint.toString(radix);
-        })
-        .join(' ');
+            .split('')
+            .map(char => {
+                const codePoint = char.charCodeAt(0);
+                return codePoint.toString(radix);
+            })
+            .join(' ');
     }
-    
+
     if (result) {
         message.reply(`**입력 (${inputType})**: \"${inputValue}\"\n**${radix}진법 변환 결과**: \`\`\`${result}\`\`\``);
     } else {

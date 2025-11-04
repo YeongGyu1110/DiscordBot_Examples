@@ -14,6 +14,11 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+사용법: /변환 [Red값] [Blue값] [Green값]
+Red, Blue, Green 값이 모두 입력되어야 하며,
+각 값에는 큰따옴표("")나 작은 따옴표('')로 감싸지 않음
 */
 const { Client, GatewayIntentBits } = require('discord.js');
 const { Guilds, GuildMessages, MessageContent } = GatewayIntentBits;
