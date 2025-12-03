@@ -19,6 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 사용법: /변환 [변환할 한글]
 - [변환할 한글]: 현재 사용되는 한글로만 작성해야 하며, 큰따옴표("")나 작은따옴표('')로 감싸지 않음
 */
+
 const { Client, GatewayIntentBits } = require('discord.js');
 const { Guilds, GuildMessages, MessageContent } = GatewayIntentBits;
 const client = new Client({ intents: [Guilds, GuildMessages, MessageContent] });
